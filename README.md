@@ -1,4 +1,4 @@
-A basic PHP script to generate NFT Json Files
+**A basic PHP script to generate NFT Json Files**
 
 Super easy to use:
 
