@@ -74,7 +74,10 @@ for($i=$startnumber;$i<$maxSupply+$startnumber;$i++)
     else
         $writeto = $filenameroot;
 
-    if (file_put_contents($dir."/export/".$writeto.".json", $json))
+    if(!file_exists($dir."/".$exportfolder))
+        mkdir($dir."/".$exportfolder);
+        
+    if (file_put_contents($dir."/".$exportfolder."/".$writeto.".json", $json))
         echo "JSON file created for #".$i;
     else 
         echo "Error creating json file for #".$i;

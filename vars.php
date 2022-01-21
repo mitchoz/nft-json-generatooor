@@ -9,6 +9,8 @@ $addNumberToFilename = true;
 $printoutput = true; //Print individual NFT data to console while generator is running
 $addNumbers = true; //Add the version number to the name
 
+$exportfolder = "export";
+
 
 //Mandatory Input
 $maxSupply = 5; //This is the max supply of tokens that can be created through sharing
